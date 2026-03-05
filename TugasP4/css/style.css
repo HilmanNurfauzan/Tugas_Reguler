@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/Logo.Itenas.jpg");
+  background-repeat: repeat;
+  background-size: 150px 150px;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 10px 0;
+}
+
+.main-card {
+  width: 720px;
+  border: 5px solid #8b4513;
+  background-color: #d4a017;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.header-banner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  border-bottom: 3px solid #8b4513;
+  overflow: hidden;
+}
+
+.header-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.content-wrapper {
+  display: flex;
+  min-height: 500px;
+}
+
+.sidebar {
+  width: 130px;
+  min-width: 130px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 5px;
+  border-right: 1px solid #b8860b;
+}
+
+.nav-link {
+  display: block;
+  text-align: center;
+  padding: 6px 10px;
+  margin-bottom: 2px;
+  color: #003366;
+  text-decoration: underline;
+  font-size: 0.95em;
+}
+
+.nav-link:hover {
+  color: #000;
+  font-weight: bold;
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+.main-content {
+  flex: 1;
+  padding: 15px 20px;
+}
+
+.main-content h2 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.main-content h3 {
+  font-size: 1.1em;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.description {
+  font-size: 0.88em;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  color: #000;
+  text-align: justify;
+}
+
+.form-table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.form-table td {
+  padding: 3px 5px;
+  font-size: 0.88em;
+  vertical-align: middle;
+}
+
+.form-table select {
+  padding: 2px 4px;
+  font-size: 0.9em;
+}
+
+.form-buttons {
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+.form-buttons button {
+  padding: 3px 12px;
+  font-size: 0.85em;
+  cursor: pointer;
+  border: 2px outset #ccc;
+  background-color: #e0e0e0;
+  margin-right: 3px;
+}
+
+.form-buttons button:hover {
+  background-color: #d0d0d0;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #4e668a;
+  margin: 10px 0;
+}
+
+.output-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.output-table td {
+  padding: 3px 5px;
+  font-size: 0.88em;
+  vertical-align: middle;
+}
+
+.output-table td:first-child {
+  width: 100px;
+}
+
+.output-table td:nth-child(2) {
+  width: 10px;
+}
+
+.output-table input[type="text"] {
+  width: 150px;
+  padding: 2px 5px;
+  font-size: 0.88em;
+  border: 1px solid #999;
+  background-color: #fff;
+}
+
+.footer {
+  background-color: #efb402;
+  text-align: center;
+  padding: 2px 0;
+  font-size: 0.85em;
+  color: #000;
+}
+
+.footer p {
+  margin: 2px 0;
+}
+
+.garis-hidup-desc {
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.garis-hidup-desc h2 {
+  font-size: 1.2em;
+  margin-bottom: 12px;
+  color: #000;
+  text-align: center;
+}
+
+.garis-hidup-desc p {
+  font-size: 0.88em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #000;
+  text-align: justify;
+  text-indent: 2em;
+}
