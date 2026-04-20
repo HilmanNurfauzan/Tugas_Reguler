@@ -1,0 +1,50 @@
+
+TUGAS 5 - PHP CRUD APPLICATION
+Mata Kuliah : Sistem Informasi Berbasis Web (SIWEB)
+Tanggal     : 20 April 2026
+Nama        : Hilman Nurfauzan
+
+
+1. db/database.php  --  KONEKSI DATABASE
+File ini bertugas menghubungkan aplikasi ke database MySQL.
+Di-include di semua file PHP lain yang butuh akses database.
+
+
+2. index.php  --  HALAMAN AWAL
+Halaman pertama yang terbuka saat aplikasi diakses dari browser.
+langsung redirect ke halaman Create menggunakan header("Location: create.php").
+
+
+3. create.php  --  TAMBAH DATA
+Halaman untuk menambahkan data user baru ke database.
+
+
+4. read.php  --  TAMPIL DATA
+Halaman untuk menampilkan semua data user yang tersimpan
+di database dalam bentuk daftar.
+
+
+5. update.php  --  EDIT DATA (U dari CRUD)
+Halaman untuk mengubah data user yang sudah ada.
+
+
+6. delete.php  --  HAPUS DATA
+memproses penghapusan data lalu redirect kembali ke read.php.
+
+
+FITUR KEAMANAN YANG DITERAPKAN
+1. Prepared Statement     : Semua query yang melibatkan input user 
+                            menggunakan mysqli_prepare() +
+                            mysqli_stmt_bind_param() untuk
+                            mencegah SQL Injection.
+2. htmlspecialchars()     : Semua output data dari database dan
+                            pesan notifikasi dilewatkan fungsi ini
+                            untuk mencegah serangan XSS.
+3. Validasi tipe data     : ID dari URL dicek dengan is_numeric()
+                            dan di-cast ke (int) sebelum dipakai
+                            di query.
+4. Validasi email         : Menggunakan filter_var() bawaan PHP
+                            dengan FILTER_VALIDATE_EMAIL.
+5. Pengecekan duplikat    : Username dan email dicek keunikannya
+                            sebelum INSERT maupun UPDATE.
+
